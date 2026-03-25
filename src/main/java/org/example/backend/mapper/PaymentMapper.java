@@ -7,7 +7,7 @@ import org.mapstruct.Mapping;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring",  uses = {CurrencyMapper.class})
+@Mapper(componentModel = "spring", uses = {CurrencyMapper.class})
 public interface PaymentMapper {
 
     @Mapping(source = "currency", target = "currencyDto")

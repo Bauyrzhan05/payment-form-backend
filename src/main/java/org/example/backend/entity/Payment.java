@@ -21,7 +21,6 @@ public class Payment {
 
     private String walletNumber;
 
-    @JoinColumn(name = "account_id")
     private Long account;
 
     private String email;
