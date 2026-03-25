@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar $(find . -name "*.jar" ! -name "*plain*" | head -1)
