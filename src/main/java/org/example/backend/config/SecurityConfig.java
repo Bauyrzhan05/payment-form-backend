@@ -31,7 +31,7 @@ public class SecurityConfig {
         http.csrf(AbstractHttpConfigurer::disable)
                 .cors(cors -> cors.configurationSource(request -> {
                     var corsConfiguration = new CorsConfiguration();
-                    corsConfiguration.setAllowedOrigins(List.of("http://localhost:5173", "http://localhost:3000", "https://payment-form-frontend-nu.vercel.app"));
+                    corsConfiguration.setAllowedOrigins(List.of("http://localhost:3000", "https://payment-form-frontend-nu.vercel.app"));
                     corsConfiguration.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS"));
                     corsConfiguration.setAllowedHeaders(List.of("*"));
                     return corsConfiguration;
