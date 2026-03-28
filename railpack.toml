@@ -1,0 +1,5 @@
+[build]
+cmd = "./gradlew clean build -x check -x test -Pproduction"
+
+[start]
+cmd = "java $JAVA_OPTS -Dserver.port=$PORT -jar $(find . -name \"*.jar\" ! -name \"*plain*\" | head -1)"
